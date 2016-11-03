@@ -52,6 +52,22 @@
     color: #f9f8f6;
 }
 
+
+/* ABOUT & SHOP INFO 部分の設定 */
+.sub_pict{
+	width: 40%;
+	padding: 15px 3%;
+	float: left;
+}
+.sub_text{
+	padding: 10px 2%;
+	width: 50%;
+	float: right;
+}
+.more_button{
+	text-align: left;
+}
+
 /* PageTopボタンの設定 */
 #page_top{
     text-align: center;

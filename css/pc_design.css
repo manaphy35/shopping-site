@@ -2,6 +2,9 @@
 
 /* PCサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
 
+
+/* header
+------------------------------------------*/
 #sp_menu{
     display: none;
 }
@@ -40,8 +43,6 @@ header li,header li *{
     display: none;
 }
 
-
-
 /* 変化途中のナビに関する設定 */
 @media (max-width: 550px){
 	header ul{
@@ -49,6 +50,19 @@ header li,header li *{
 	}
 }
 
+/* sub_field
+------------------------------------------*/
+/* 検索エンジン部分 */
+#search_box label{
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #887f69;
+}
+
+
+
+/* footer
+------------------------------------------*/
 /* PageTopボタンの設定 */
 #page_top{
     text-align: right;
