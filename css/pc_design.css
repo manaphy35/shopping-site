@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* PCサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+
+#sp_menu{
+    display: none;
+}
+#pc_menu{
+    display: block;
+}
+#logo img{
+    width: 141px;
+}
+
+/* header 設定 */
+header{
+	padding:30px 0 0;
+}
+
+/* ナビの設定 */
+
+header ul{
+	float: right;
+	padding: 20px 0 0;
+}
+header li{
+	display: inline-block;
+	margin: 0 4px;
+}
+
+header li,header li *{
+	vertical-align: bottom;
+}
+
+.social_link{
+    font-size: 2.2rem;
+}
+
+#pc_menu li span.sp_menu_txt{
+    display: none;
+}
+
+
+
+/* 変化途中のナビに関する設定 */
+@media (max-width: 550px){
+	header ul{
+		padding:0;
+	}
+}
+
+/* PageTopボタンの設定 */
+#page_top{
+    text-align: right;
+}

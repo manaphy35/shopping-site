@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* SPサイズ限定でサイト時の表示・表現の内容を記載していくCSS */
+
+#pc_menu{
+	display:none;
+}
+#logo img{
+	width:110px;
+}
+
+/* header 設定 */
+#logo{
+	width: 100%;
+	text-align: center;
+}
+
+#logo img{
+    margin-top: 10px;
+}
+
+/* ナビの設定 */
+#sp_menu{
+    text-align: center;
+}
+#sp_menu li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 6px;
+    font-size: 2.4rem;
+}
+
+/* ハンバーガー内の隠しメニュー部分の設定 */
+#pc_menu{
+    background-color: #ff6d77;
+    padding: 10px;
+}
+
+#pc_menu li{
+    list-style: none;
+    border-bottom: solid 1px #f9f8f6;
+}
+
+#pc_menu li img{
+    display: none;
+}
+
+#pc_menu li span{
+    display: block;
+    padding: 12px 6px ;
+    font-size: 1.5rem;
+    color: #f9f8f6;
+}
+
+/* PageTopボタンの設定 */
+#page_top{
+    text-align: center;
+}
+

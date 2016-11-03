@@ -1,0 +1,3 @@
+@import url(./design_base.css); /* PC-SP関係なく同じ命令を当てる内容を記載したCSS */
+@import url(./sp_design.css); /* SP限定のデザインを適用したい命令だけをまとめたCSS */
+@import url(./sp_design_top.css); /* SP表示時のTOPページでしか適用しない命令だけをまとめたCSS */

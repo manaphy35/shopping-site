@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* エリアに色をつける */
+
+header{ background: #eee;}
+#main_field{ background: #66ffcc;}
+#sub_field{ background: #ffff66;}
+footer{ background: #eee; }
+
+/* 背景設定 */
+body{
+  background: #f9f8f6;
+}
+main{
+	padding:20px 0 !important;
+}
+a{
+	color:#524b3b;
+	text-decoration: none;
+}
+a:hover{
+	color:#776d56;
+}
+
+/* 初期化し損ねている余計な余白を解除 */
+form,h1,h2,h3,h4,dl,dt,dd,ul,li{
+	margin:0; padding:0;
+}
+
+
+/* new field 設定 */
+#main_field ul{
+  background: #ccc;
+}
+
+#main_field div{
+  background: #bbb;
+}
+
+/* sub field 設定 */
+#sub_field article{
+  background: #ccc;
+  margin-bottom:10px;
+}
+
+
+
+/* footer 設定 */
+
+#page_top{
+  padding-bottom: 20px;
+}
+
+footer ul{
+  border-top: solid 1px #b0b0b0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin: 0 5px;
+  padding: 0 10px;
+  background:url(../image/common/dot.gif) no-repeat 0 9px;
+}
+
+footer small{
+  text-align: center;
+  font-size: 1rem;
+  color: #e2ddd4;
+}

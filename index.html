@@ -8,6 +8,8 @@
   <title>APPLE BERRY made with B</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta http-equiv="Content-Script-Type" content="text/javascript;">
+  <meta http-equiv="Content-Style-Type" content="text/css;">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -17,7 +19,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sp_init_top.css" media="(max-width: 549px)"><!-- SP用のCSSをパッケージ化 -->
+  <link rel="stylesheet" href="css/pc_init_top.css" media="print,screen and (min-width: 550px)"><!-- PC用のCSSをパッケージ化 -->
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
@@ -26,9 +29,116 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
     
   </head>
-  <body>
+  
+  
+  <body id="shopping_site_top">
+  
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="container">
+    <div class="row">
+      <h1 id="logo" class="four columns" >
+        <a href="index.html" alt="Apple Berry"><img class="u-max-full-width" src="images/top/logo.png" /></a>
+      </h1>
+      <nav class="eight columns">
+        <ul id="sp_menu">
+          <li><a href="index.html" target="_blank" title="FaceBook"><img class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" aria-hidden="true"/></a></li>
+          <li><a href="index.html" target="_blank" title="Instagram"><img class="u-max-full-width" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x" aria-hidden="true"/></a></li>
+          <li id="sp_menu_button"><img src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x" aria-hidden="true"/></li>
+        </ul>
+        
+        <ul id="pc_menu">
+          <li><a href="index.html"><img id="login_btn" class="u-max-full-width" src="images/top/menu_login.png" alt="login" /></a><span class="sp_menu_txt">ログイン</span></li>
+          <li><a href="index.html"><img id="cart_btn" class="u-max-full-width" src="images/top/menu_cart.png" alt="cart" /></a><span class="sp_menu_txt">カート</span></li>
+          <li><a href="index.html"><img id="mypage_btn" class="u-max-full-width" src="images/top/menu_mypage.png" alt="mypage" /></a><span class="sp_menu_txt">マイページ</span></li>
+          <li><a href="index.html"><img id="guide_btn" class="u-max-full-width" src="images/top/menu_guide.png" alt="guide" /></a><span class="sp_menu_txt">ショッピングガイド</span></li>
+          <li class="social_link"><a href="index.html" target="_blank" ><img id="fb_btn" class="u-max-full-width" src="images/top/facebook.png" alt="facebook"  /></a></li>
+          <li class="social_link"><a href="index.html" target="_blank" ><img id="insta_btn" class="u-max-full-width" src="images/top/insta.png" alt="instagram" /></a></li>
+        </ul>
+        
+      </nav>
+
+    </div>
+  </header>
+    
+  <!-- Main
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+  <main class="container">
+    <section class="row">
+      <div id="main_field" class="nine columns">
+        <ul id="curousel_slider">
+          カルーセル
+        </ul>
+        
+        <div id="new_items_list">
+          new items
+        </div>
+        <div id="popular_items_list">
+          popular items
+        </div>
+        <div id="shopping_guide">
+          shopping guide
+        </div>
+      </div>
+      <!--- main field -->
+      
+      <div id="sub_field" class="three columns">
+        <article id="item_serch">
+          <img src="images/top/itemserch.png" />
+          <form>
+            
+          </form>
+        </article>
+        <article>
+          <img src="images/top/pagelink.png" />
+        </article>
+        <article>
+          <img src="images/top/categories.png" />
+        </article>
+        <article>
+          <img src="images/top/about.png" />
+          <div>
+            <img src="images/top/about_img.jpg" />
+          </div>
+        </article>
+        <article>
+          <img src="images/top/shop_info.png" />
+          <div class="shop_info">
+            <div class="sub_menu_title">
+              <img src="images/top/shopinfo_img.jpg" />
+            </div>
+            <div class="sub_text">
+              <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+            </div>
+            <div class="sub_pict">
+              <a href="#"><img src="images/top/more_btn.png"/></a>
+            </div>
+          </div>
+      </div>
+      <!--- sub field -->
+      
+    </section>
+  </main>
+  
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <footer class="container">
+    <div id="page_top" class="row twelve columns">
+      <a href="#logo"><img src="images/top/pagetop.png" alt="PAGE TOP"/></a>
+    </div>
+    <div class="row twelve columns">
+      <ul>
+        <li><a href="#">特定商に基づく表記</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">マイページ</a></li>
+      </ul>
+      <small class="twelve columns">copyright (C) APPLE BERRY all rights reserved.</small>
+    </div>
+  </footer>
+    
+    
+  <!-- Header
+  ––––––––––––––––––––––––––––––––––––––––––––––––––
   <header> 
     <div id="header_in" class="container">
       <div class="row">
@@ -40,7 +150,7 @@
       <div class="ten columns navi">
         <div class="sp_menu">  
           
-        <span class="sp_navi">
+        <div class="sp_navi">
           <img id="sp_navi_btn" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x" />
 
           <ul class="sp_navi_li">
@@ -49,32 +159,36 @@
             <li><a href="index.html">マイページ</a></li>
             <li><a href="index.html">ショッピングガイド</a></li>
           </ul>
-        </span>
+        </div>
           <a href="index.html"><img id="sp_fb_btn" class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png 2x" /></a>
           <a href="index.html"><img id="sp_insta_btn" class="u-max-full-width" src="images/top_sp/insta.png" alt="instagram" srcset="images/top_sp/insta@2x.png 2x" /></a>
         </div>
-        <!--- sp menu --->
+        <!--- sp menu -->
         
+        <!--- pc menu --
         <div class="pc_navi">
-          <ul class="pc_navi_li">
-            <a href="index.html"><img id="login_btn" class="u-max-full-width" src="images/top/menu_login.png" /></a>
-            <a href="index.html"><img id="cart_btn" class="u-max-full-width" src="images/top/menu_cart.png" /></a>
-            <a href="index.html"><img id="mypage_btn" class="u-max-full-width" src="images/top/menu_mypage.png" /></a>
-            <a href="index.html"><img id="guide_btn" class="u-max-full-width" src="images/top/menu_guide.png" /></a>
-            <a href="index.html"><img id="fb_btn" class="u-max-full-width" src="images/top/facebook.png" /></a>
-            <a href="index.html"><img id="insta_btn" class="u-max-full-width" src="images/top/insta.png" /></a>
-          </ul>      
+          <div> class="pc_navi_li">
+            <a href="index.html"><img id="login_btn" class="u-max-full-width" src="images/top/menu_login.png" alt="login" /></a>
+            <a href="index.html"><img id="cart_btn" class="u-max-full-width" src="images/top/menu_cart.png" alt="cart" /></a>
+            <a href="index.html"><img id="mypage_btn" class="u-max-full-width" src="images/top/menu_mypage.png" alt="mypage" /></a>
+            <a href="index.html"><img id="guide_btn" class="u-max-full-width" src="images/top/menu_guide.png" alt="guide" /></a>
+            <a href="index.html"><img id="fb_btn" class="u-max-full-width" src="images/top/facebook.png" alt="facebook"  /></a>
+            <a href="index.html"><img id="insta_btn" class="u-max-full-width" src="images/top/insta.png" alt="instagram" /></a>
+          </div>      
         </div>
-        <!--- pc menu --->
-      
+        
       </div>
       
     </div>
     </div>
-    <!--- header_in --->
   </header>
+---header-->
 
-
+  <!-- JQueryのベースライブラリを読み込む -->
+  <script src="./js/jquery.min.js"></script>
+  <!-- ハンバーガーメニューの動きを実装 -->
+  <script src="./js/sp_menu.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   </body>
 </html>
