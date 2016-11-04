@@ -1,22 +1,23 @@
 @charset "utf-8";
 
-/* SPサイズ限定でTOPページの表示・表現の内容を記載していくCSS */
+/* PCサイズ限定でTOPページの表示・表現の内容を記載していくCSS */
 
 /* アイテムリストの幅 */
 .item_list li{
-	width: 50%;
+	width: 33.3%;
 }
 
 /* main field　見出し画像設定 */
-.title_pc{
+.title_sp{
     display: none;
 }
 
 .item_list p img{
-    padding: 20px 0;
+    width: 100%;
+    padding: 30px 0;
 }
 
 /* ショッピングガイドの幅 */
 .guide_box{
-    width: 100%;
+    width: 50%;
 }

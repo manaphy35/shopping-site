@@ -31,6 +31,10 @@ header li{
 	margin: 0 4px;
 }
 
+header li a:hover{
+	opacity: 0.75;	
+}
+
 header li,header li *{
 	vertical-align: bottom;
 }
