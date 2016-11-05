@@ -1,22 +1,15 @@
 @charset "UTF-8";
-/* エリアに色をつける */
-header {
-  background: #eee; }
-
-#sub_field {
-  background: #ffff66; }
-
-footer {
-  background: #eee; }
-
 /* common
 ------------------------------------------*/
 /* 背景設定 */
 body {
   background: #f9f8f6; }
 
+.container {
+  margin-bottom: 20px; }
+
 main {
-  padding: 20px 0 !important; }
+  padding: 20px 0; }
 
 a {
   color: #524b3b;
@@ -42,6 +35,24 @@ form, h1, h2, h3, h4, dl, dt, dd, ul, li {
 /* カラー設定 */
 /* main field
 ------------------------------------------*/
+/* breadcrumb 設定 */
+#breadcrumb ul {
+  background: #e2ddd4;
+  padding: 10px;
+  line-height: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+#breadcrumb li {
+  display: inline-block;
+  list-style: none;
+  line-height: 0;
+  font-size: 1.1rem;
+  color: #887f69;
+  margin-right: 5px; }
+  #breadcrumb li img {
+    padding-right: 5px; }
+
 /* carousel 設定 */
 #carousel-slider {
   list-style: none; }
@@ -54,6 +65,12 @@ form, h1, h2, h3, h4, dl, dt, dd, ul, li {
   float: left; }
 
 #popular_items_list li {
+  float: left; }
+
+#recent_list li {
+  float: left; }
+
+#all_items_list li {
   float: left; }
 
 .item_list p {
@@ -85,32 +102,219 @@ form, h1, h2, h3, h4, dl, dt, dd, ul, li {
     margin-right: 5px;
     margin-bottom: 15px; }
 
-/* shopping guide 設定 */
-.guide_box {
+/* back next button 設定 */
+#trandition_btn ul {
+  padding-top: 20px; }
+  #trandition_btn ul li {
+    list-style: none; }
+    #trandition_btn ul li a {
+      display: block;
+      padding: 14px 40px;
+      background: #887f69;
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      line-height: 1.4rem;
+      color: #fff; }
+      #trandition_btn ul li a:hover {
+        opacity: 0.75; }
+
+#btn_back {
   float: left; }
+
+#btn_next {
+  float: right; }
+
+/* product box 設定 */
+#product_box {
+  background: #fff;
+  margin-bottom: 0; }
+
+#product_name {
+  padding: 0 0 30px;
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem; }
+
+#product_id {
+  font-weight: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #b0b0b0;
+  margin-bottom: 10px; }
+
+/* garally */
+#product_img {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2ddd4; }
+  #product_img img {
+    display: block;
+    width: 100%; }
+
+#list_img li img {
+  border: 1px solid #fff;
+  border-top: none; }
+
+#list_img li {
+  list-style: none; }
+
+/* shopping form */
+#cart_box {
+  border-bottom: 1px solid #e2ddd4; }
+  #cart_box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8a8168; }
+  #cart_box table {
+    border: 1px solid #e2ddd4; }
+
+#cart_box tr {
+  border: 1px solid #e2ddd4; }
+
+#cart_box th, #cart_box td {
+  border: 1px solid #e2ddd4; }
+#cart_box table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%; }
+#cart_box th, #cart_box td {
+  padding: 10px 0;
+  text-align: center; }
+#cart_box th {
+  font-size: 1.3rem;
+  color: #998669;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  background: #f9f9f5; }
+#cart_box td input {
+  display: block;
+  margin: auto; }
+
+.form_wrap h3, .form_wrap div {
+  display: inline-block;
+  padding: 10px 0 0;
+  margin-bottom: 10px; }
+.form_wrap h3 {
+  width: 35%; }
+.form_wrap div {
+  width: 62%;
+  white-space: nowrap; }
+
+#price_data {
+  border-top: 1px solid #e2ddd4;
+  border-bottom: 1px solid #e2ddd4; }
+
+#price_wrap {
+  font-style: italic; }
+
+#price_data strong {
+  color: #9d1a2d;
+  font-size: 2.2rem;
+  font-weight: normal; }
+#price_data span {
+  padding: 0 5px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem; }
+
+#quantity_data {
+  margin-bottom: -15px; }
+  #quantity_data input {
+    width: 100%; }
+
+#btn_cart input {
+  width: 225px;
+  height: 55px; }
+  #btn_cart input:hover {
+    opacity: 0.75; }
+
+/* product detail */
+#product_detail h2 {
+  font-size: 1.6rem;
+  color: #887f69;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-top: 20px; }
+#product_detail h3 {
+  font-size: 1.6rem;
+  color: #887f69;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 10px  0  30px 0; }
+#product_detail p {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+  margin-bottom: 0; }
+#product_detail tr, #product_detail td {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #887f69;
+  line-height: 1.7rem;
+  border: 1px solid #e2ddd4; }
+#product_detail table {
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 100%; }
+#product_detail th, #product_detail td {
+  padding: 10px 10px; }
+#product_detail td {
+  text-align: left;
+  width: 75%; }
+#product_detail th {
+  text-align: center;
+  width: 25%;
+  font-size: 1.3rem;
+  color: #998669;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  background: #f9f9f5; }
+
+/* shopping guide */
+#whole_guide {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.guide_box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff; }
 
 #shopping_guide h6 {
   font-size: 1.6rem;
   font-weight: bold;
   color: #887f69;
-  margin-bottom: 10px; }
+  margin: 10px; }
+#shopping_guide dt, #shopping_guide dd {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 5px 10px;
+  line-height: 2.4rem; }
+#shopping_guide dt {
+  font-weight: bold;
+  color: #887f69; }
 
-.guide_box {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 20px 20px 30px 20px; }
-  .guide_box p {
-    text-align: left;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    line-height: 2.4rem; }
-  .guide_box img {
-    margin: 3px 0 15px 0;
-    padding: 0; }
-  .guide_box .guide_title {
-    color: #887f69; }
+.guide_wrap {
+  width: 100%;
+  border: solid 2px #f9f8f6;
+  padding-bottom: 10px; }
+  .guide_wrap div.guide_pict img {
+    padding-left: 10px; }
+
+#guide_right img {
+  width: 95%; }
 
 /* sub field
 ------------------------------------------*/
@@ -201,7 +405,7 @@ input[type="image"] {
 ------------------------------------------*/
 /* footer 設定 */
 #page_top {
-  padding-bottom: 20px; }
+  padding: 20px 0; }
 
 footer ul {
   border-top: solid 1px #b0b0b0;
@@ -212,8 +416,7 @@ footer li {
   font-size: 1.2rem;
   color: #b0b0b0;
   margin: 0 5px;
-  padding: 0 5px;
-  /*ここにドットの区切りを追加する*/ }
+  padding: 0; }
 footer small {
   text-align: center;
   font-size: 1rem;

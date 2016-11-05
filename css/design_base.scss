@@ -1,19 +1,7 @@
 @charset "utf-8";
 @import "compass";
 
-/* エリアに色をつける */
 
-header {
-  background: #eee;
-}
-
-#sub_field {
-  background: #ffff66;
-}
-
-footer {
-  background: #eee;
-}
 
 /* common
 ------------------------------------------*/
@@ -23,8 +11,12 @@ body {
   background: #f9f8f6;
 }
 
+.container{
+  margin-bottom: 20px; 
+}
+
 main {
-  padding: 20px 0 !important;
+  padding: 20px 0;
 }
 
 a {
@@ -62,6 +54,29 @@ $red : #9d1a2d;
 
 /* main field
 ------------------------------------------*/
+/* breadcrumb 設定 */
+#breadcrumb{
+  ul{
+    background: $beige2;
+    padding: 10px;
+    line-height: 0;
+    @include border-radius(4px);
+  }
+  
+  li{
+    display: inline-block;
+    list-style: none;
+    line-height: 0;
+    font-size: 1.1rem;
+    color: $blown;
+    margin-right: 5px;
+    img{
+      padding-right: 5px;
+    }
+  }
+}
+
+
 /* carousel 設定 */
 
 #carousel-slider {
@@ -79,6 +94,12 @@ $red : #9d1a2d;
 }
 #popular_items_list li{
   float: left;
+}
+#recent_list li{
+  float: left;
+}
+#all_items_list li{
+  float: left;  
 }
 
 .item_list {
@@ -120,40 +141,289 @@ $red : #9d1a2d;
   }
 }
 
-/* shopping guide 設定 */
+/* back next button 設定 */
+#trandition_btn{
+  ul{
+    padding-top: 20px;
+    li{
+      list-style: none;
+      a{
+        display: block;
+        padding: 14px 40px;
+        background: $blown;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        line-height: 1.4rem;
+        color: #fff;
+        &:hover{
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
+
+#btn_back{
+  float: left;
+}
+
+#btn_next{
+  float: right;
+}
+
+
+/* product box 設定 */
+
+#product_box{
+  background: #fff;
+  margin-bottom: 0;
+}
+
+#product_name{
+  padding: 0 0 30px;
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+#product_id{
+  font-weight: normal;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+/* garally */
+
+#product_img {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2ddd4;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+#list_img li img {
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+#list_img li{
+  list-style: none;
+}
+
+/* shopping form */
+#cart_box{
+  border-bottom: 1px solid #e2ddd4;
+  h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8a8168;
+  }
+  table{
+    border: 1px solid #e2ddd4;
+  }
+}
+
+#cart_box tr{
+  border: 1px solid #e2ddd4;
+}
+
+#cart_box{
+  th, td{
+    border: 1px solid #e2ddd4;
+  }
+  table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  th, td{
+    padding: 10px 0;
+    text-align: center;
+  }
+  th{
+    font-size: 1.3rem;
+    color: #998669;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    background: #f9f9f5;
+  }
+  td input{
+    display: block;
+    margin: auto;
+  }
+}
+
+.form_wrap{
+  h3, div{
+    display: inline-block;
+    padding: 10px 0 0;
+    margin-bottom: 10px;
+  }
+  h3{
+    width: 35%;
+  }
+  div{
+    width: 62%;
+    white-space: nowrap;
+  }
+}
+
+#price_data{
+  border-top: 1px solid #e2ddd4;
+  border-bottom: 1px solid #e2ddd4;
+}
+
+#price_wrap{
+  font-style: italic;
+}
+
+#price_data{
+  strong{
+    color: $red;
+    font-size: 2.2rem;
+    font-weight: normal;
+  }
+  span{
+    padding: 0 5px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+#quantity_data{
+  margin-bottom: -15px;
+  input{
+    width: 100%;
+  }
+}
+
+#btn_cart input {
+  width: 225px;
+  height: 55px;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+/* product detail */
+#product_detail{
+  h2{
+    font-size: 1.6rem;
+    color: $blown;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  h3{
+    font-size: 1.6rem;
+    color: $blown;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 10px  0  30px 0;
+  }
+  p{
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    margin-bottom: 0;
+  }
+  tr,td{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: $blown;
+    line-height: 1.7rem;
+    border: 1px solid #e2ddd4;
+  }
+  table{
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  th, td{
+    padding: 10px 10px;
+  }
+  td{
+    text-align: left;
+    width: 75%;
+  }
+  th{
+    text-align: center;
+    width: 25%;
+    font-size: 1.3rem;
+    color: #998669;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    background: #f9f9f5;
+  }
+}
+
+
+/* shopping guide */
+
+#whole_guide{
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
 
 .guide_box{
-    float: left;
-  }
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+	background:#fff;
+	
+  @include box-sizing(border-box);
+  background: #fff;
+}
 
 #shopping_guide{
   h6{
     font-size: 1.6rem;
     font-weight: bold;
     color: $blown;
-    margin-bottom: 10px;
+    margin: 10px;
+  }
+  dt,dd{
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 5px 10px;
+    line-height: 2.4rem;
+  }
+  dt{
+    font-weight: bold;
+    color: $blown;
   }
 }
 
-.guide_box{
-  @include box-sizing(border-box);
-  background: #fff;
-  padding: 20px 20px 30px 20px;
-    p{
-      text-align: left;
-      font-size: 1.2rem;
-      margin-bottom: 0;
-      line-height: 2.4rem;
-    }
+.guide_wrap{
+  width: 100%;
+  border: solid 2px $beige1;
+  padding-bottom: 10px;
+  
+  div.guide_pict{
     img{
-      margin: 3px 0 15px 0;
-      padding: 0;
+      padding-left: 10px;       
     }
-    .guide_title{
-      color: $blown;
-    }
+  }
 }
 
+#guide_right{
+  img{
+    width: 95%;
+  }
+}
 
 
 /* sub field
@@ -274,7 +544,7 @@ input {
 /* footer 設定 */
 
 #page_top {
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 footer {
@@ -288,8 +558,7 @@ footer {
     font-size: 1.2rem;
     color: #b0b0b0;
     margin: 0 5px;
-    padding: 0 5px;
-    /*ここにドットの区切りを追加する*/
+    padding: 0;
   }
   small {
     text-align: center;

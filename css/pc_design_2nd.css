@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* PCサイズ限定でTOPページの表示・表現の内容を記載していくCSS */
+
+/* item list 幅 */
+.item_list li{
+	width: 33.3%;
+}
+
+/* main field　見出し画像設定 */
+.title_sp{
+    display: none;
+}
+
+.item_list p img{
+    width: 100%;
+    padding: 30px 0;
+}
+
+/* shopping guide 幅 */
+.guide_box{
+    width: 50%;
+}
+
+/* item detail */
+#product_box{
+	padding: 40px 5%;
+	margin-top: 20px;
+}
+
+#product_box h2{
+    border-bottom: 1px solid #e2ddd4;
+    margin-bottom: 20px;
+}
+
+/* item name */
+#product_id{
+	float:right;
+}
+
+/* garally */
+#main_img{
+	width: 72%;
+	float: left;
+}
+#main_img img{
+	border-right:1px solid #fff;
+}
+#list_img{
+	width: 28%;
+	float: right;
+}
+#list_img li{
+	width: 48%;
+	float: left;
+}
+#list_img a:hover{
+    opacity: 0.75;
+}
+
+/* form */
+#form_wrapper{
+	float: left;
+	width: 57%;
+}
+#btn_cart{
+	width: 225px;
+	float: right;
+}
+#btn_cart input{
+    margin: 0;
+}
+
+#price_wrap{
+    position: relative;
+    left: 70px;
+}
+#quantity_wrap{
+    position: relative;
+    left: 52px;
+}
+
+@media(max-width:950px){
+	#form_wrapper{
+		float: none;
+		width:100%;
+	}
+	#btn_cart{
+		clear: both;
+		float: none;
+		margin:0 auto;
+	}
+	#btn_cart input{
+		margin:0 auto;
+		padding:10px 0 20px;
+	}
+}

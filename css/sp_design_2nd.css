@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* SPサイズ限定でTOPページの表示・表現の内容を記載していくCSS */
+
+/* アイテムリストの幅 */
+.item_list li{
+	width: 50%;
+}
+
+/* main field　見出し画像設定 */
+.title_pc{
+    display: none;
+}
+
+.item_list p img{
+    padding: 20px 0;
+}
+
+/* main field　パンくず非表示 */
+#breadcrumb{
+    display: none;
+}
+
+/* shopping guide 幅 */
+.guide_box{
+    width: 100%;
+}
+
+/* product box */
+
+#product_box{
+  padding: 15px;
+}
+
+#product_box h2{
+    border-bottom: 1px solid #e2ddd4;
+    margin-bottom: 10px;
+}
+
+/* product name */
+
+#product_name{
+  padding: 0;
+}
+
+#product_id{
+  display: block;
+  padding: 8px 0;
+}
+
+/* garally */
+
+#main_img img{
+  border-bottom: 3px solid #fff;
+}
+
+#list_img{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#list_img li{
+  width: 20%;
+}
+
+#list_img li img{
+  border: 2px solid #fff;
+}
+
+/* form */
+#cart_box{
+	border: none;
+}
+
+#form_wrapper{
+	width: 100%;
+}
+#btn_cart{
+	width: 100%;
+	text-align: center;
+}
+#btn_cart input{
+	margin: 10px auto 20px;
+	float: none;
+}
+

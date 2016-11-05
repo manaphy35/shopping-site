@@ -19,6 +19,14 @@
     margin-top: 10px;
 }
 
+.container{
+    padding: 0;
+}
+
+#main_field{
+    margin-bottom: 15px;
+}
+
 /* ナビの設定 */
 #sp_menu{
     text-align: center;
